@@ -7,7 +7,7 @@ $(function() {
     point = coords[currentPointIndex];
 
     if (currentMarker) {
-      currentMarker.addTo(null);
+      currentMarker.removeLayer();
     }
 
     latLng = [
