@@ -13,9 +13,12 @@
     
     <!-- Bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     
     <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/leaflet.css" rel="stylesheet">
     
     <!-- Plugin: animate.css (animated effects) - http://daneden.github.io/animate.css/ -->
     <link href="plugins/animate/animate.css" rel="stylesheet">
@@ -34,6 +37,7 @@
     <script src="plugins/html5shiv/dist/html5shiv.js"></script>
     <script src="plugins/respond/respond.min.js"></script>
     <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     
     <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
     <link rel="shortcut icon" href="img/icons/favicon.png">
@@ -229,7 +233,9 @@
       <span>Timelines</span> 
       <small>5 New Timeline Options</small>
     </h2>
+    <div id="map"></div>
     <!-- Timeline 1: timeline-stacked -->
+
     <h3>
       Timeline 4: .timeline-stacked
     </h3>
@@ -513,5 +519,6 @@
 
 <!--demo functionality -->
 <script src="js/main.js"></script>
+<script src="js/leaflet.js"></script>
 </body>
 </html>
