@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Mobile Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="">
+    <meta name="author" content="HackLA 2014">
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Plugin: animate.css (animated effects) - http://daneden.github.io/animate.css/ -->
+    <link href="plugins/animate/animate.css" rel="stylesheet">
+    
+    <!-- Theme style -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!--Your custom colour override-->
+    <link href="#" id="colour-scheme" rel="stylesheet">
+    
+    <!-- Your custom override -->
+    <link href="css/custom-style.css" rel="stylesheet">
+    
+    <!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
+    <!--[if lt IE 9]>
+    <script src="plugins/html5shiv/dist/html5shiv.js"></script>
+    <script src="plugins/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+    <link rel="shortcut icon" href="img/icons/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="plugins/retina/js/retina-1.1.0.min.js"></script>
+  </head>
+  
+  <!-- ======== @Region: body ======== -->
+  <body class="page page-login">
+    <a href="#content" class="sr-only">Skip to content</a> 
+    
+    <!-- ======== @Region: #navigation ======== -->
+    <div id="navigation" class="wrapper">
+      <div class="navbar-static-top">
+        
+        <!--Hidden Header Region-->
+        <div class="header-hidden">
+          <div class="header-hidden-inner container">
+            <div class="row">
+              <div class="col-sm-4 col-md-4">
+                <h3>
+                  Welcome!
+                </h3>
+                <p>Here's where we talk about the app and everything about it!</p>
+                <a href="about.htm" class="btn btn-sm btn-primary">More...</a> 
+              </div>
+              <div class="col-sm-4 col-md-4">
+                <!--Colour Switch for demo - @todo: remove in production-->
+                <div class="colour-switcher">
+                  <h3>
+                    Ride with Style
+                  </h3>
+                  <a href="#green" class="green active" data-toggle="tooltip" data-placement="bottom" data-original-title="Green (Default)">Green</a> <a href="#red" class="red" data-toggle="tooltip" data-placement="bottom" data-original-title="Red">Red</a> <a href="#blue" class="blue" data-toggle="tooltip" data-placement="bottom" data-original-title="Blue">Blue</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Header upper region-->
+        <div class="header-upper">
+          <div class="header-upper-inner container">
+            <div class="row">
+              <div class="col-xs-8 col-xs-push-4">
+                
+                <!--Show/hide trigger for #hidden-header -->
+                <div id="header-hidden-link">
+                  <a href="#" title="Click me you'll get a surprise" class="show-hide" data-toggle="show-hide" data-target=".header-hidden" data-callback="searchFormFocus"><i></i>Open</a>
+                </div>
+                
+                <!--social media icons-->
+                <div class="social-media">
+                  <!--@todo: replace with company social media details-->
+                  <a href="#"> <i class="fa fa-twitter-square"></i> </a>
+                  <a href="#"> <i class="fa fa-facebook-square"></i> </a>
+                  <a href="#"> <i class="fa fa-google-plus-square"></i> </a>
+                </div>
+              </div>
+              <div class="col-xs-4 col-xs-pull-8">
+                
+                <!--user menu-->
+                <div class="btn-group user-menu">
+                  <a href="login.htm" class="btn btn-link login-mobile"><i class="fa fa-user"></i></a>
+                  <a href="#signup-modal" class="btn btn-link signup" data-toggle="modal">Sign Up</a>
+                </li>
+                <a href="#login-modal" class="btn btn-link login" data-toggle="modal">Login</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Header search region - hidden by default -->
+      <div class="header-search">
+        <form class="search-form container">
+          <input type="text" name="search" class="form-control search" value="" placeholder="Search">
+          <button type="button" class="btn btn-link"><span class="sr-only">Search </span><i class="fa fa-search fa-flip-horizontal search-icon"></i></button>
+          <button type="button" class="btn btn-link close-btn" data-toggle="search-form-close"><span class="sr-only">Close </span><i class="fa fa-times search-icon"></i></button>
+        </form>
+      </div>
+      
+      <!--Header & Branding region-->
+      <div class="header" data-toggle="clingify">
+        <div class="header-inner container">
+          <div class="navbar">
+            <div class="pull-left">
+              <!--branding/logo-->
+              <a class="navbar-brand" href="index.htm" title="Home">
+                <h1>
+                  <span>Bike</span>++<span></span>
+                </h1>
+              </a>
+              <div class="slogan">2 makes a ride</div>
+            </div>
+            
+            <!--Search trigger -->
+            <a href="#search" class="search-form-tigger" data-toggle="search-form" data-target=".header-search">
+            </span>
+            <i class="fa fa-search fa-flip-horizontal search-icon"></i>
+          </a>
+          
+          <!-- mobile collapse menu button - data-toggle="toggle" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu -->
+          <a href="#top" class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse" data-direction="right"><i class="fa fa-bars"></i></a>
+          
+          <!--everything within this div is collapsed on mobile-->
+          <div class="navbar-collapse collapse">
+            <!--main navigation-->
+            <ul class="nav navbar-nav">
+              <li class="home-link">
+                <a href="home.htm"><i class="fa fa-home"></i><span class="hidden">Home</span></a>
+              </li>
+              
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" id="pages-drop" data-toggle="dropdown" data-hover="dropdown">BASICS +</a> 
+                <!-- Menu -->
+                <ul class="dropdown-menu" role="menu" aria-labelledby="pages-drop">
+                  <li class="dropdown dropdown-submenu">
+                    <a href="about.htm" class="dropdown-toggle" id="about-drop" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">About</a> 
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
+                      <li role="presentation">
+                        <a role="menuitem" href="about.htm" tabindex="-1" class="menu-item">About Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li role="presentation"><a role="menuitem" href="contact.htm" tabindex="-1" class="menu-item">Contact</a></li>
+                  <li class="active" role="presentation"><a role="menuitem" href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
+                  <li role="presentation"><a role="menuitem" href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="blog.htm" class="dropdown-toggle" id="blog-drop" data-toggle="dropdown" data-hover="dropdown">Tools for the Road +</a> 
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu" role="menu" aria-labelledby="blog-drop">
+                  <li role="presentation">
+                    <a role="menuitem" href="features.htm" tabindex="-1" class="menu-item">Ride Safe</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="dropdown dropdown-full">
+                <a href="#" class="dropdown-toggle menu-item" id="megamenu-drop" data-toggle="dropdown" data-hover="dropdown">FIND A RIDE +</a> 
+                <!-- Dropdown Menu - Mega Menu -->
+                <ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="megamenu-drop">
+                  <li role="presentation" class="dropdown-header">The Explanation about finding the Ride</li>
+                  <li role="presentation">
+                    <ul class="row list-unstyled" role="menu">
+                      <li class="col-md-3" role="presentation">
+                        <a role="menuitem" href="rides_1.htm" class="img-link">
+                          <img src="img/features/feature-1.png" alt="Feature 1" />
+                        </a>
+                        <a role="menuitem" href="rides_1.htm" tabindex="-1" class="menu-item"><strong>I want to Ride</strong></a>
+                        <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> 
+                      </li>
+                      <li class="col-md-3" role="presentation">
+                        <a role="menuitem" href="rides_2.htm" class="img-link">
+                          <img src="img/features/feature-2.png" alt="Feature 2" />
+                        </a>
+                        <a role="menuitem" href="rides_2.htm" tabindex="-1" class="menu-item"><strong>Join a Ride</strong></a>
+                        <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> 
+                      </li>
+                      <li class="col-md-3" role="presentation">
+                        <a role="menuitem" href="rides_3.htm" class="img-link">
+                          <img src="img/features/feature-3.png" alt="Feature 3" />
+                        </a>
+                        <a role="menuitem" href="rides_3.htm" tabindex="-1" class="menu-item"><strong>Rides Near Me</strong></a>
+                        <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> 
+                      </li>
+                    </ul>
+                  </li>
+                </ul
+              </li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======== @Region: #content ======== -->
+<div id="content">
+  <div class="container" id="about">
+    <h2 class="title-divider">
+      <span>Timelines</span> 
+      <small>5 New Timeline Options</small>
+    </h2>
+    <!-- Timeline 1: timeline-stacked -->
+    <h3>
+      Timeline 4: .timeline-stacked
+    </h3>
+    <div class="timeline timeline-stacked">
+      <div class="timeline-breaker">2014</div>
+      <!--Timeline item 0-->
+      <div class="timeline-item animated fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/blog/frog.jpg" alt="Picture of frog by Ben Fredericson" class="img-responsive" />
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Fri 16th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Caecus Esca Ludus Molior Similis</a>
+            </h4>
+            <p class="timeline-item-description">Accumsan eum humo ibidem tum. Abigo blandit os tego. Defui euismod fere humo imputo obruo pecus similis ut. Camur dolor fere gilvus loquor nutus sino tincidunt. Accumsan cui eu exerci gilvus ille lobortis luctus pertineo utrum. Abdo aptent exerci ibidem jus quibus torqueo.</p>
+            <p class="timeline-item-description">Abico feugiat interdico tum validus. Blandit caecus genitus macto melior nutus oppeto pneum proprius. Duis gilvus melior utrum. Commoveo elit esca huic sed veniam vero. Consequat distineo loquor proprius si turpis. Accumsan aliquip decet gravis luptatum plaga sed vulpes. Natu nutus roto scisco.</p>
+          </div>
+        </div>
+      </div>
+      <!--Timeline item 1-->
+      <div class="timeline-item animated right fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/blog/ladybird.jpg" alt="Picture of frog by Ben Fredericson" class="img-responsive" />
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Wed 14th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Abdo Amet Quae Venio Wisi</a>
+            </h4>
+            <p class="timeline-item-description">Dolor immitto melior molior plaga scisco. Adipiscing aliquip nibh occuro quadrum. Eu feugiat sudo. Ad at distineo hendrerit os suscipit. Illum refero verto. Causa eligo gravis inhibeo iriure jus tamen tum ulciscor. Feugiat jumentum quia. Commoveo damnum jus nisl refero tincidunt.</p>
+            <p class="timeline-item-description">Abluo aliquip comis dolor illum inhibeo quia sed similis verto. Causa esca gilvus nibh nisl quibus roto rusticus saluto. Camur eligo facilisi pagus ratis refero virtus. Fere gemino gilvus haero importunus quidne sed. Aptent capto erat haero nutus pala populus suscipit.</p>
+          </div>
+        </div>
+      </div>
+      <!--Timeline item 2-->
+      <div class="timeline-item animated fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/blog/ape.jpg" alt="Picture of frog by Ben Fredericson" class="img-responsive" />
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Tue 13th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Abigo Lobortis Natu Refoveo Saluto</a>
+            </h4>
+            <p class="timeline-item-description">At nimis nutus pecus voco. Aliquip consectetuer consequat minim singularis velit vindico ymo. At capto decet esca plaga velit. Aliquip augue commoveo natu populus sudo suscipere. Distineo hendrerit lenis mauris modo nutus pala proprius quia. Abdo interdico luptatum praesent. Camur duis ibidem in iriure populus rusticus sit virtus.</p>
+            <p class="timeline-item-description">Consectetuer mauris saluto. Autem cogo diam dignissim euismod imputo uxor vindico vulputate. At huic mauris natu persto quibus veniam vicis. Appellatio jus lenis minim praesent suscipit uxor valetudo. Abbas elit gilvus ibidem quae quidne quis sed. Decet erat luptatum occuro vulpes.</p>
+          </div>
+        </div>
+      </div>
+      <!--Timeline item 3-->
+      <div class="timeline-item animated highlight right fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/blog/fly.jpg" alt="Picture of frog by Ben Fredericson" class="img-responsive" />
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Mon 12th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Ad Iusto Jus Nisl Paratus</a>
+            </h4>
+            <p class="timeline-item-description">Hendrerit modo scisco verto. Abigo blandit commodo humo iusto occuro paratus vero volutpat. Abdo ad at camur consectetuer cui nimis vel vicis. Caecus facilisis refero utrum. Abluo facilisis magna refoveo vero. Causa erat exputo plaga quadrum secundum turpis vulputate. Abbas caecus damnum enim luptatum minim nulla quia ratis.</p>
+            <p class="timeline-item-description">Iriure paulatim secundum. Accumsan antehabeo pala tego. Acsi probo te. Bene dolore jus laoreet melior praemitto quadrum quidne validus vicis. Duis in letalis qui valetudo. Brevitas inhibeo iriure si suscipere. Dolore imputo magna olim rusticus ut. Damnum iaceo jus probo ut ymo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-breaker timeline-breaker-middle">2013</div>
+      <!--Timeline item 4-->
+      <div class="timeline-item animated fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/blog/water-pump.jpg" alt="Picture of frog by Ben Fredericson" class="img-responsive" />
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Tue 13th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Antehabeo Interdico Qui Uxor Venio</a>
+            </h4>
+            <p class="timeline-item-description">Similis tego tincidunt. Et pagus quia zelus. Elit gemino ibidem ideo iusto quae sagaciter zelus. Abdo esca jus luptatum quidne turpis validus verto. Importunus iustum loquor quadrum ratis saluto validus. Bene capto dolor eligo facilisi huic ideo mauris quibus velit.</p>
+            <p class="timeline-item-description">Abigo facilisi gemino occuro pagus proprius torqueo wisi. Et lenis os tation veniam. Nostrud usitas vel. Meus proprius refero te. Acsi brevitas conventio damnum diam fere in typicus veniam virtus. Abdo cogo esca jugis minim qui secundum singularis suscipere. Dolus immitto in occuro ratis.</p>
+          </div>
+        </div>
+      </div>
+      <!--Timeline item 5-->
+      <div class="timeline-item animated right fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/blog/butterfly.jpg" alt="Picture of frog by Ben Fredericson" class="img-responsive" />
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Mon 12th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Feugiat Lobortis Neque Occuro Paulatim</a>
+            </h4>
+            <p class="timeline-item-description">Bene caecus decet distineo ea eu haero proprius vulpes vulputate. Euismod fere importunus praemitto validus. Consectetuer elit feugiat genitus luptatum quibus zelus. Abbas pertineo pneum valde. Feugiat nunc quia venio virtus vulputate. Incassum luctus roto suscipere. Dolor refoveo usitas. Ibidem nutus paratus quis sino tum vereor vulpes.</p>
+            <p class="timeline-item-description">Consequat ea jus os quis sino tation vulpes zelus. Commoveo obruo sino. At cui inhibeo jugis jus nibh refero. Abluo erat hos ideo loquor quidne ulciscor validus. Nunc vero wisi. Et gravis humo oppeto rusticus suscipere tincidunt usitas. Aliquip cui exerci.</p>
+          </div>
+        </div>
+      </div>
+      <!--Timeline item 6-->
+      <div class="timeline-item animated fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/blog/bee.jpg" alt="Picture of frog by Ben Fredericson" class="img-responsive" />
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Thu 15th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Commodo Consequat Dolus Lobortis Tum</a>
+            </h4>
+            <p class="timeline-item-description">Abigo ad amet eros eum hendrerit populus utinam. Abluo bene iusto nibh os tamen tum valde volutpat. Conventio defui dolor dolus interdico olim secundum singularis. Abigo haero iriure proprius. Autem gemino jugis nimis obruo occuro pagus plaga probo saluto. Cui dignissim dolore eu ideo nulla odio paulatim saluto vulpes.</p>
+            <p class="timeline-item-description">Abbas caecus dolus duis ea eum inhibeo loquor suscipere. At ludus modo quae. Eu facilisi iaceo jus quia quidne roto tego valde validus. Mos natu odio scisco sino torqueo. Abbas exerci humo natu. Abluo commoveo dolor feugiat gemino interdico mos neque nobis.</p>
+          </div>
+        </div>
+      </div>
+      <!--Timeline item 7-->
+      <div class="timeline-item animated right fadeIn de-02">
+        <div class="row">
+          <div class="col-md-4">
+            <object width="560" height="315">
+              <param name="movie" value="//www.youtube.com/v/YXVoqJEwqoQ?version=3&amp;hl=en_US&amp;rel=0"></param>
+              <param name="allowFullScreen" value="true"></param>
+              <param name="allowscriptaccess" value="always"></param>
+              <embed src="//www.youtube.com/v/YXVoqJEwqoQ?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed>
+            </object>
+          </div>
+          <div class="col-md-8">
+            <div class="margin-top-md timeline-item-date">Sun 11th May</div>
+            <h4 class="timeline-item-title">
+              <a href="#">Camur Distineo Sagaciter Torqueo Vulpes</a>
+            </h4>
+            <p class="timeline-item-description">Bene dignissim ea meus natu. Abluo diam eligo facilisis haero molior tego. Amet causa genitus jus neo odio sudo. Abigo cogo conventio quidne venio. Aliquip praesent quae secundum. Damnum occuro pecus persto quis vulputate. Mos qui quidne sit usitas. Adipiscing augue neo nibh.</p>
+            <p class="timeline-item-description">Eum nobis odio pagus pala refoveo. Duis illum refero. Decet ex nostrud rusticus suscipit volutpat. Caecus dignissim enim. Esca proprius torqueo vero vicis. Amet duis esse minim natu oppeto persto velit. Ad appellatio et lenis luctus probo quibus utrum. Lobortis si sudo validus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-breaker timeline-breaker-bottom">The End</div>
+    </div>
+    
+</div>
+
+<!-- FOOTER -->
+
+<!-- ======== @Region: #footer ======== -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col">
+        <div class="block contact-block">
+          <!--@todo: replace with company contact details-->
+          <h3>
+            Contact Us
+          </h3>
+          <address>
+            <ul class="fa-ul">
+              <li>
+                <abbr title="Phone"><i class="fa fa-li fa-phone"></i></abbr>
+                019223 8092344
+              </li>
+              <li>
+                <abbr title="Email"><i class="fa fa-li fa-envelope"></i></abbr>
+                info@appstraptheme.com
+              </li>
+              <li>
+                <abbr title="Address"><i class="fa fa-li fa-home"></i></abbr>
+                Sunshine House, Sunville. SUN12 8LU.
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div id="toplink">
+        <a href="#top" class="top-link" title="Back to top">Back To Top <i class="fa fa-chevron-up"></i></a>
+      </div>
+      <!--@todo: replace with company copyright details-->
+      <div class="subfooter">
+        <div class="col-md-6">
+          <p>Bike + + | Copyright 2014 &copy;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Hidden elements - excluded from jPanel Menu on mobile-->
+<div class="hidden-elements jpanel-menu-exclude">
+  <!--@modal - signup modal-->
+  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">
+            Sign Up
+          </h4>
+        </div>
+        <div class="modal-body">
+          <form action="signup.htm" role="form">
+            <h5>
+              Incentive Message Here
+            </h5>
+            <div class="form-group">
+              <label class="sr-only" for="signup-username">Userame</label>
+              <input type="text" class="form-control" id="signup-username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-password">Password</label>
+              <input type="password" class="form-control" id="signup-password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="term">
+                I agree with the Terms and Conditions. 
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Sign up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <small>Already signed up? <a href="login.htm">Login here</a>.</small>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  
+  <!--@modal - login modal-->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">
+            Login
+          </h4>
+        </div>
+        <div class="modal-body">
+          <form action="login.htm" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="login-email">Email</label>
+              <input type="email" id="login-email" class="form-control email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="login-password">Password</label>
+              <input type="password" id="login-password" class="form-control password" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary">Login</button>
+            | <small><a href="#">Forgotten password?</a></small>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <small>Not a member? <a href="signup.htm" class="signup">Sign up now!</a></small>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+</div>
+
+
+<!--Scripts -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+
+<!--Custom scripts mainly used to trigger libraries/plugins -->
+<script src="js/script.min.js"></script>
+</body>
+</html>

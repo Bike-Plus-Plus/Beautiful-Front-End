@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Mobile Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- @todo: fill with your company info or remove -->
+    <meta name="description" content="">
+    <meta name="author" content="HackLA 2014">
+    
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Plugin: animate.css (animated effects) - http://daneden.github.io/animate.css/ -->
+    <link href="plugins/animate/animate.css" rel="stylesheet">
+    
+    <!-- Theme style -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!--Your custom colour override-->
+    <link href="#" id="colour-scheme" rel="stylesheet">
+    
+    <!-- Your custom override -->
+    <link href="css/custom-style.css" rel="stylesheet">
+    
+    <!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
+    <!--[if lt IE 9]>
+    <script src="plugins/html5shiv/dist/html5shiv.js"></script>
+    <script src="plugins/respond/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+    <link rel="shortcut icon" href="img/icons/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rambla' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    
+    <!--Plugin: Retina.js (high def image replacement) - @see: http://retinajs.com/-->
+    <script src="plugins/retina/js/retina-1.1.0.min.js"></script>
+  </head>
+  
+  <!-- ======== @Region: body ======== -->
+  <body class="page page-login">
+    <a href="#content" class="sr-only">Skip to content</a> 
+    
+    <!-- ======== @Region: #navigation ======== -->
+    <div id="navigation" class="wrapper">
+      <div class="navbar-static-top">
+        
+        <!--Hidden Header Region-->
+        <div class="header-hidden">
+          <div class="header-hidden-inner container">
+            <div class="row">
+              <div class="col-sm-4 col-md-4">
+                <h3>
+                  Welcome!
+                </h3>
+                <p>Here's where we talk about the app and everything about it!</p>
+                <a href="about.htm" class="btn btn-sm btn-primary">More...</a> 
+              </div>
+              <div class="col-sm-4 col-md-4">
+                <!--Colour Switch for demo - @todo: remove in production-->
+                <div class="colour-switcher">
+                  <h3>
+                    Ride with Style
+                  </h3>
+                  <a href="#green" class="green active" data-toggle="tooltip" data-placement="bottom" data-original-title="Green (Default)">Green</a> <a href="#red" class="red" data-toggle="tooltip" data-placement="bottom" data-original-title="Red">Red</a> <a href="#blue" class="blue" data-toggle="tooltip" data-placement="bottom" data-original-title="Blue">Blue</a> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!--Header upper region-->
+        <div class="header-upper">
+          <div class="header-upper-inner container">
+            <div class="row">
+              <div class="col-xs-8 col-xs-push-4">
+                
+                <!--Show/hide trigger for #hidden-header -->
+                <div id="header-hidden-link">
+                  <a href="#" title="Click me you'll get a surprise" class="show-hide" data-toggle="show-hide" data-target=".header-hidden" data-callback="searchFormFocus"><i></i>Open</a>
+                </div>
+                
+                <!--social media icons-->
+                <div class="social-media">
+                  <!--@todo: replace with company social media details-->
+                  <a href="#"> <i class="fa fa-twitter-square"></i> </a>
+                  <a href="#"> <i class="fa fa-facebook-square"></i> </a>
+                  <a href="#"> <i class="fa fa-google-plus-square"></i> </a>
+                </div>
+              </div>
+              <div class="col-xs-4 col-xs-pull-8">
+                
+                <!--user menu-->
+                <div class="btn-group user-menu">
+                  <a href="login.htm" class="btn btn-link login-mobile"><i class="fa fa-user"></i></a>
+                  <a href="#signup-modal" class="btn btn-link signup" data-toggle="modal">Sign Up</a>
+                </li>
+                <a href="#login-modal" class="btn btn-link login" data-toggle="modal">Login</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Header search region - hidden by default -->
+      <div class="header-search">
+        <form class="search-form container">
+          <input type="text" name="search" class="form-control search" value="" placeholder="Search">
+          <button type="button" class="btn btn-link"><span class="sr-only">Search </span><i class="fa fa-search fa-flip-horizontal search-icon"></i></button>
+          <button type="button" class="btn btn-link close-btn" data-toggle="search-form-close"><span class="sr-only">Close </span><i class="fa fa-times search-icon"></i></button>
+        </form>
+      </div>
+      
+      <!--Header & Branding region-->
+      <div class="header" data-toggle="clingify">
+        <div class="header-inner container">
+          <div class="navbar">
+            <div class="pull-left">
+              <!--branding/logo-->
+              <a class="navbar-brand" href="index.htm" title="Home">
+                <h1>
+                  <span>Bike</span>++<span></span>
+                </h1>
+              </a>
+              <div class="slogan">2 makes a ride</div>
+            </div>
+            
+            <!--Search trigger -->
+            <a href="#search" class="search-form-tigger" data-toggle="search-form" data-target=".header-search">
+            </span>
+            <i class="fa fa-search fa-flip-horizontal search-icon"></i>
+          </a>
+          
+          <!-- mobile collapse menu button - data-toggle="toggle" = default BS menu - data-toggle="jpanel-menu" = jPanel Menu -->
+          <a href="#top" class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse" data-direction="right"><i class="fa fa-bars"></i></a>
+          
+          <!--everything within this div is collapsed on mobile-->
+          <div class="navbar-collapse collapse">
+            <!--main navigation-->
+            <ul class="nav navbar-nav">
+              <li class="home-link">
+                <a href="home.htm"><i class="fa fa-home"></i><span class="hidden">Home</span></a>
+              </li>
+              
+              <li class="dropdown active">
+                <a href="#" class="dropdown-toggle" id="pages-drop" data-toggle="dropdown" data-hover="dropdown">BASICS +</a> 
+                <!-- Menu -->
+                <ul class="dropdown-menu" role="menu" aria-labelledby="pages-drop">
+                  <li class="dropdown dropdown-submenu">
+                    <a href="about.htm" class="dropdown-toggle" id="about-drop" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">About</a> 
+                    <!-- Dropdown Menu -->
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
+                      <li role="presentation">
+                        <a role="menuitem" href="about.htm" tabindex="-1" class="menu-item">About Us</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li role="presentation"><a role="menuitem" href="contact.htm" tabindex="-1" class="menu-item">Contact</a></li>
+                  <li class="active" role="presentation"><a role="menuitem" href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
+                  <li role="presentation"><a role="menuitem" href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="blog.htm" class="dropdown-toggle" id="blog-drop" data-toggle="dropdown" data-hover="dropdown">Tools for the Road +</a> 
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu" role="menu" aria-labelledby="blog-drop">
+                  <li role="presentation">
+                    <a role="menuitem" href="features.htm" tabindex="-1" class="menu-item">Ride Safe</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="dropdown dropdown-full">
+                <a href="#" class="dropdown-toggle menu-item" id="megamenu-drop" data-toggle="dropdown" data-hover="dropdown">FIND A RIDE +</a> 
+                <!-- Dropdown Menu - Mega Menu -->
+                <ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="megamenu-drop">
+                  <li role="presentation" class="dropdown-header">The Explanation about finding the Ride</li>
+                  <li role="presentation">
+                    <ul class="row list-unstyled" role="menu">
+                      <li class="col-md-3" role="presentation">
+                        <a role="menuitem" href="rides_1.htm" class="img-link">
+                          <img src="img/features/feature-1.png" alt="Feature 1" />
+                        </a>
+                        <a role="menuitem" href="rides_1.htm" tabindex="-1" class="menu-item"><strong>I want to Ride</strong></a>
+                        <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> 
+                      </li>
+                      <li class="col-md-3" role="presentation">
+                        <a role="menuitem" href="rides_2.htm" class="img-link">
+                          <img src="img/features/feature-2.png" alt="Feature 2" />
+                        </a>
+                        <a role="menuitem" href="rides_2.htm" tabindex="-1" class="menu-item"><strong>Join a Ride</strong></a>
+                        <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> 
+                      </li>
+                      <li class="col-md-3" role="presentation">
+                        <a role="menuitem" href="rides_3.htm" class="img-link">
+                          <img src="img/features/feature-3.png" alt="Feature 3" />
+                        </a>
+                        <a role="menuitem" href="rides_3.htm" tabindex="-1" class="menu-item"><strong>Rides Near Me</strong></a>
+                        <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> 
+                      </li>
+                    </ul>
+                  </li>
+                </ul
+              </li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======== @Region: #content ======== -->
+<div id="content">
+  <div class="container">
+    <!-- Login form -->
+      <div class="row">
+        <!-- Secondary features -->
+        <div class="col-md-9">
+          <h3 class="title-divider">
+            <span>Always a <span class="de-em">Safe Ride</span></span>
+            <small>We explain how every ride is safe.</small>
+          </h3>
+          <div class="tabbable tabs-left vertical-tabs bold-tabs row">
+            <ul class="nav nav-tabs nav-stacked col-sm-4 col-md-4">
+              <li class="active">
+                <a href="#tab1" data-toggle="tab">
+                  Tools for the Road 
+                  <small>Some tag line here</small>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#tab2" data-toggle="tab">
+                  24/7 Support 
+                  <small>When you need it most</small>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#tab3" data-toggle="tab">
+                  Assistance is a Click Away 
+                  <small>We encourage help</small>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#tab4" data-toggle="tab">
+                  Our philosophy on the road 
+                  <small>Some other benefit</small>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content col-sm-8 col-md-8">
+              <div class="feature tab-pane active col-sm-12 col-md-12" id="tab1">
+                <img src="img/features/feature-1.png" alt="Feature 1" class="img-responsive" />
+                <h3 class="title visible-phone">
+                  Tools for the Road
+                </h3>
+                <!--only show on mobile when tabs are open-->
+                <p>Tools for the road, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
+                <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. </p>
+              </div>
+              <div class="feature tab-pane col-sm-12 col-md-12" id="tab2">
+                <img src="img/features/feature-2.png" alt="Feature 2" class="img-responsive" />
+                <h3 class="title visible-phone">
+                  24/7 Support
+                </h3>
+                <!--only show on mobile when tabs are open-->
+                <p>Help is all around you, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
+                <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. </p>
+              </div>
+              <div class="feature tab-pane col-sm-12 col-md-12" id="tab3">
+                <img src="img/features/feature-3.png" alt="Feature 3" class="img-responsive" />
+                <h3 class="title visible-phone">
+                  Assistance is a Click Away
+                </h3>
+                <!--only show on mobile when tabs are open-->
+                <p>You can find assistance, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
+                <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. </p>
+              </div>
+              <div class="feature tab-pane col-sm-12 col-md-12" id="tab4">
+                <img src="img/features/feature-4.png" alt="Feature 4" class="img-responsive" />
+                <h3 class="title visible-phone">
+                  Our philosophy on the road
+                </h3>
+                <!--only show on mobile when tabs are open-->
+                <p>We encourage everyone to help out, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio! Elementum tortor sociis in eu dis dictumst pulvinar lorem nec aliquam a nascetur.</p>
+                <p>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Contact block-->
+        <div class="col-md-3">
+          <h3 class="title-divider">
+            <span>Questions?</span> 
+            <small>Help us make a better app!</small>
+          </h3>
+          <p>
+            <abbr title="Email"><i class="fa fa-envelope"></i></abbr>
+            info@bike++.io
+          </p>
+          <form id="callback-form" action="#" class="bordered-top-medium" role="form">
+            <div class="input-group">
+              <label class="sr-only" for="callback-number">Input Your Number</label>
+              <input type="tel" class="form-control" id="callback-number" placeholder="Your Number">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">Get Callback</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+
+<!-- ======== @Region: #footer ======== -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col">
+        <div class="block contact-block">
+          <!--@todo: replace with company contact details-->
+          <h3>
+            Contact Us
+          </h3>
+          <address>
+            <ul class="fa-ul">
+              <li>
+                <abbr title="Phone"><i class="fa fa-li fa-phone"></i></abbr>
+                019223 8092344
+              </li>
+              <li>
+                <abbr title="Email"><i class="fa fa-li fa-envelope"></i></abbr>
+                info@appstraptheme.com
+              </li>
+              <li>
+                <abbr title="Address"><i class="fa fa-li fa-home"></i></abbr>
+                Sunshine House, Sunville. SUN12 8LU.
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div id="toplink">
+        <a href="#top" class="top-link" title="Back to top">Back To Top <i class="fa fa-chevron-up"></i></a>
+      </div>
+      <!--@todo: replace with company copyright details-->
+      <div class="subfooter">
+        <div class="col-md-6">
+          <p>Bike + + | Copyright 2014 &copy;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Hidden elements - excluded from jPanel Menu on mobile-->
+<div class="hidden-elements jpanel-menu-exclude">
+  <!--@modal - signup modal-->
+  <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">
+            Sign Up
+          </h4>
+        </div>
+        <div class="modal-body">
+          <form action="signup.htm" role="form">
+            <h5>
+              Incentive Message Here
+            </h5>
+            <div class="form-group">
+              <label class="sr-only" for="signup-username">Userame</label>
+              <input type="text" class="form-control" id="signup-username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="signup-password">Password</label>
+              <input type="password" class="form-control" id="signup-password" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="term">
+                I agree with the Terms and Conditions. 
+              </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Sign up</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <small>Already signed up? <a href="login.htm">Login here</a>.</small>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+  
+  <!--@modal - login modal-->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">
+            Login
+          </h4>
+        </div>
+        <div class="modal-body">
+          <form action="login.htm" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="login-email">Email</label>
+              <input type="email" id="login-email" class="form-control email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="login-password">Password</label>
+              <input type="password" id="login-password" class="form-control password" placeholder="Password">
+            </div>
+            <button type="button" class="btn btn-primary">Login</button>
+            | <small><a href="#">Forgotten password?</a></small>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <small>Not a member? <a href="signup.htm" class="signup">Sign up now!</a></small>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+</div>
+
+
+<!--Scripts -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+
+
+<!-- JS plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
+
+<!--Custom scripts mainly used to trigger libraries/plugins -->
+<script src="js/script.min.js"></script>
+</body>
+</html>
