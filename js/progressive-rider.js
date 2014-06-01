@@ -3,17 +3,22 @@ $(function() {
   var stepPoints, coords, currentPointIndex, currentMarker;
 
   stepPoints = function() {
-    var point = coords[currentPointIndex];
+    var point, latLng;
+    point = coords[currentPointIndex];
 
     if (currentMarker) {
       currentMarker.addTo(null);
     }
 
-    currentMarker = L.marker([
+    latLng = [
       point.lat,
       point.lng
-    ]);
+    ];
+
+    currentMarker = L.marker(latLng);
     currentMarker.addTo(map);
+
+    map.panTo(latLng);
 
     currentPointIndex++;
 
