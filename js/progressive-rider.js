@@ -1,25 +1,31 @@
 $(function() {
 
-  var stepPoints, coords, currentPointIndex, currentMarker;
+  var map, stepPoints, coords, currentPointIndex, currentMarker, stepInterval;
+
+  map = L.map('map', {
+    center: [34, -118],
+    zoom: 15
+  } );
+
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
 
   stepPoints = function() {
-    var point, latLng;
+    var point, mapBounds;
     point = coords[currentPointIndex];
 
-    if (currentMarker) {
-      currentMarker.removeLayer();
+    if (!currentMarker) {
+      currentMarker = L.marker(point);
+      currentMarker.addTo(map);
+    } else {
+      currentMarker.setLatLng(point);
     }
-
-    latLng = [
-      point.lat,
-      point.lng
-    ];
-
-    currentMarker = L.marker(latLng);
-    currentMarker.addTo(map);
-
-    map.panTo(latLng);
-
+    map.panTo(point);
+    // mapBounds = map.getBounds();
+    // if ( ! mapBounds.contains(point) ) {
+    //   map.panTo(point);
+    // }
     currentPointIndex++;
 
     if (currentPointIndex >= coords.length) {
@@ -31,19 +37,20 @@ $(function() {
     url: 'jen_route.min.json',
     dataType: 'json',
     success: function(data) {
-      var dimensions, split;
+      var point, split;
 
       currentPointIndex = 0;
       coords = [];
       $(data).each(function() {
-        split = coords.push(this.split(' '));
-        dimensions = {
-          lat: split[0],
-          lng: split[1],
-          altitude: split[2]
-        };
-        setInterval(stepPoints, 500);
+        split = this.split(/\s+/);
+        point = [
+          split[1],
+          split[0]
+        ];
+        coords.push(point);
       });
+      clearInterval(stepInterval);
+      stepInterval = setInterval(stepPoints, 67);
 
     }
   });
